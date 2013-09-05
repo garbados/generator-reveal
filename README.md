@@ -5,6 +5,8 @@ http://lab.hakim.se/reveal-js/#/
 
 **Note:**   If you have problems with livereload on Mac OSX, you can comment line 42 of the Grunfile.js file. 
 
+**Doubelnote:** This fork adds support for deploying Reveal.js presentations to CouchDB / Cloudant. `yo reveal` asks questions about where your CouchDB instance lives, and which database to use, while `grunt couch` deploys to that instance.
+
 ```javascript
 middleware: function (connect) {
   return [
