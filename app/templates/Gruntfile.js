@@ -3,9 +3,11 @@
 
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
+var path = require('path');
 var mountFolder = function (connect, dir) {
-    return connect.static(require('path').resolve(dir));
+    return connect.static(path.resolve(dir));
 };
+var config = require('./config.json');
 
 module.exports = function (grunt) {
     // load all grunt tasks
@@ -49,6 +51,36 @@ module.exports = function (grunt) {
             server: {
                 path: 'http://localhost:<%%= connect.options.port %>'
             }
+        },
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            'bower_components/**', 
+                            'slides/**', 
+                            'js/**',
+                            'index.html'
+                        ], 
+                        dest: '_attachments/'
+                    }
+                ]
+            }
+        },
+        mkcouchdb: {
+            app: {
+                db: [config.couchapp.root, config.couchapp.db].join('/'),
+                options: {
+                    okay_if_exists: true
+                }
+            }
+        },
+        couchapp: {
+            app: {
+                db: [config.couchapp.root, config.couchapp.db].join('/'),
+                app: config.couchapp.app
+            }
         }
     });
 
@@ -63,4 +95,6 @@ module.exports = function (grunt) {
             }
         });
     });
+
+    grunt.registerTask('couch', ['build', 'mkcouchdb', 'copy', 'couchapp'])
 };

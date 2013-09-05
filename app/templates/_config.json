@@ -1,3 +1,8 @@
 {
-  "name": "<%= presentationTitle %>"
+  "name": "<%= presentationTitle %>",
+  "couchapp": {
+    "root": "<%= couchdbUrl %>",
+    "db": "<%= couchdbDatabase %>",
+    "app": "app.js"
+  }
 }
