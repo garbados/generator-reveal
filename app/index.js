@@ -29,11 +29,23 @@ RevealGenerator.prototype.askFor = function askFor() {
     name: 'packageVersion',
     message: 'What version should we put in the package.json file?',
     default: '0.0.0'
+  },
+  {
+    name: "couchdbUrl",
+    message: "Where does your CouchDB / Cloudant instance live?",
+    default: "http://localhost:5984"
+  },
+  {
+    name: "couchdbDatabase",
+    message: "What database will your presentation live in?",
+    default: "reveal"
   }];
 
   this.prompt(prompts, function (props) {
     this.presentationTitle = props.presentationTitle;
     this.packageVersion = props.packageVersion;
+    this.couchdbUrl = props.couchdbUrl;
+    this.couchdbDatabase = props.couchdbDatabase;
     cb();
   }.bind(this));
 };
@@ -51,6 +63,9 @@ RevealGenerator.prototype.app = function app() {
   this.copy('loadtemplates.js', 'js/loadtemplates.js');
   this.copy('main.js', 'js/main.js');
   this.copy('list.json', 'slides/list.json');
+
+  this.mkdir('_attachments');
+  this.copy('app.js', 'app.js');
 };
 
 RevealGenerator.prototype.projectfiles = function projectfiles() {

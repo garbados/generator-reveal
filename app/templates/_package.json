@@ -10,7 +10,10 @@
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.2",
     "connect-livereload": "~0.2.0",
-    "moment": "~2.0.0"
+    "moment": "~2.0.0",
+    "couchapp": "~0.10.0",
+    "grunt-couchapp": "elfsternberg/grunt-couchapp",
+    "grunt-contrib-copy": "~0.4.1"
   },
   "engines": {
     "node": ">=0.8.0"
