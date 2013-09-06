@@ -24,7 +24,7 @@ For additional info, follow [Issue #5](https://github.com/slara/generator-reveal
 
 Install `generator-reveal`:
 ```
-npm install -g generator-reveal
+npm install -g git+https://github.com/garbados/generator-reveal.git
 ```
 
 Make a new directory, and `cd` into it:
