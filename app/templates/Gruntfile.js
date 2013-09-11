@@ -64,6 +64,13 @@ module.exports = function (grunt) {
                             'index.html'
                         ], 
                         dest: '_attachments/'
+                    },
+                    {
+                        expand: true,
+                        src: [
+                            'css/**'
+                        ],
+                        dest: '_attachments/bower_components/reveal.js/css/'
                     }
                 ]
             }
