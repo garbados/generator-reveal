@@ -69,8 +69,10 @@ RevealGenerator.prototype.app = function app() {
 
   this.mkdir('css');
   this.mkdir('css/theme');
+  this.copy('cloudant.css', 'css/theme/cloudant.css');
 
   this.mkdir('images');
+  this.copy('logo.gif', 'images/logo.gif');
 };
 
 RevealGenerator.prototype.projectfiles = function projectfiles() {
