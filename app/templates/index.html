@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css" id="theme">
 
   <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    var is_pdf = window.location.search.match( /print-pdf/gi );
+    document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( is_pdf ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  </script>
 </head>
 <body>
 
