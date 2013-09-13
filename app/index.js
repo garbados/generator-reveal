@@ -65,9 +65,12 @@ RevealGenerator.prototype.app = function app() {
   this.copy('list.json', 'slides/list.json');
 
   this.mkdir('_attachments');
-  this.copy('app.js', 'app.js');
+  this.template('_app.js', 'app.js');
 
   this.mkdir('css');
+  this.mkdir('css/theme');
+
+  this.mkdir('images');
 };
 
 RevealGenerator.prototype.projectfiles = function projectfiles() {

@@ -61,6 +61,7 @@ module.exports = function (grunt) {
                             'bower_components/**', 
                             'slides/**', 
                             'js/**',
+                            'images/**',
                             'index.html'
                         ], 
                         dest: '_attachments/'
@@ -103,5 +104,5 @@ module.exports = function (grunt) {
         });
     });
 
-    grunt.registerTask('couch', ['build', 'mkcouchdb', 'copy', 'couchapp'])
+    grunt.registerTask('default', ['build', 'mkcouchdb', 'copy', 'couchapp'])
 };
