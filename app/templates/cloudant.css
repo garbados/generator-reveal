@@ -15,21 +15,15 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #72C7E7;
-  background: -moz-radial-gradient(center, circle cover, #C3C8C8 0%, #72C7E7 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #C3C8C8), color-stop(100%, #72C7E7));
-  background: -webkit-radial-gradient(center, circle cover, #C3C8C8 0%, #72C7E7 100%);
-  background: -o-radial-gradient(center, circle cover, #C3C8C8 0%, #72C7E7 100%);
-  background: -ms-radial-gradient(center, circle cover, #C3C8C8 0%, #72C7E7 100%);
-  background: radial-gradient(center, circle cover, #C3C8C8 0%, #72C7E7 100%);
-  background-color: #2b2b2b; }
+  background: #002C77;
+  background-color: #002C77; }
 
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #51626F; }
+  color: #FFF; }
 
 ::selection {
   color: white;
@@ -46,7 +40,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #51626F;
+  color: #E17000;
   font-family: "League Gothic", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -60,7 +54,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #002C77;
+  color: #72C7E7;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -69,7 +63,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #002C77;
+  color: #72C7E7;
   text-shadow: none;
   border: none; }
 
@@ -93,7 +87,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #002C77;
+  border-color: #72C7E7;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 .logos {
@@ -114,19 +108,19 @@ img.logo,
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #002C77; }
+  border-right-color: #E17000; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #002C77; }
+  border-left-color: #E17000; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #002C77; }
+  border-bottom-color: #E17000; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #002C77; }
+  border-top-color: #E17000; }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #E17000; }
