@@ -5,19 +5,6 @@ http://lab.hakim.se/reveal-js/#/
 
 This fork adds support for deploying Reveal.js presentations to CouchDB / Cloudant. `yo reveal` asks questions about where your CouchDB instance lives, and which database to use, while `grunt couch` deploys to that instance.
 
-**Note:**   If you have problems with livereload on Mac OSX, you can comment line 42 of the Grunfile.js file.
-
-```javascript
-middleware: function (connect) {
-  return [
-    //lrSnippet,
-    mountFolder(connect, '.')
-  ];
-}
-```
-
-For additional info, follow [Issue #5](https://github.com/slara/generator-reveal/issues/5).
-
 ---
 
 ## Usage
@@ -37,11 +24,9 @@ Run `yo reveal`:
 yo reveal
 ```
 
-After all files are created you can view your slides with `grunt`
+After all files are created you can upload your slides with `grunt`
 
-```bash
-grunt server
-```
+    grunt
 
 ## Generators
 
