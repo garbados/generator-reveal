@@ -40,7 +40,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #E17000;
+  color: #fc0;
   font-family: "League Gothic", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -108,31 +108,31 @@ img.logo,
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #E17000; }
+  border-right-color: #fc0; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #E17000; }
+  border-left-color: #fc0; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #E17000; }
+  border-bottom-color: #fc0; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #E17000; }
+  border-top-color: #fc0; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #E17000; }
+  border-right-color: #fc0; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #E17000; }
+  border-left-color: #fc0; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #E17000; }
+  border-bottom-color: #fc0; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #E17000; }
+  border-top-color: #fc0; }
 
 /*********************************************
  * PROGRESS BAR
