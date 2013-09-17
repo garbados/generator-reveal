@@ -69,9 +69,9 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: [
-                            'css/**'
+                            'css/**',
                         ],
-                        dest: '_attachments/bower_components/reveal.js/css/'
+                        dest: '_attachments/bower_components/reveal.js'
                     }
                 ]
             }
