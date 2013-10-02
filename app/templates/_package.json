@@ -12,7 +12,7 @@
     "connect-livereload": "~0.2.0",
     "moment": "~2.0.0",
     "couchapp": "~0.10.0",
-    "grunt-couchapp": "elfsternberg/grunt-couchapp",
+    "grunt-couchapp": "~0.2.0",
     "grunt-contrib-copy": "~0.4.1"
   },
   "engines": {
