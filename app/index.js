@@ -73,6 +73,7 @@ RevealGenerator.prototype.app = function app() {
 
   this.mkdir('images');
   this.copy('logo.png', 'images/logo.png');
+  this.copy('bg.png', 'images/bg.png');
 };
 
 RevealGenerator.prototype.projectfiles = function projectfiles() {
