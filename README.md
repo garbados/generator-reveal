@@ -11,7 +11,7 @@ This fork adds support for deploying Reveal.js presentations to CouchDB / Clouda
 
 Install `generator-reveal`:
 ```
-npm install -g git+https://github.com/garbados/generator-reveal.git
+npm install -g git+https://github.com/garbados/generator-reveal.git#cloudant
 ```
 
 Make a new directory, and `cd` into it:
