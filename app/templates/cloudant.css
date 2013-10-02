@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900,300italic,400italic,600italic,900italic');
 /**
  * Default theme for reveal.js.
  *
@@ -15,8 +16,9 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #002C77;
-  background-color: #002C77; }
+  background: url('../../../../images/bg.png');
+  background-color: #002C77;
+  background-size: cover; }
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -46,15 +48,24 @@ body {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
-
+.reveal h1 {
+  font-family: "Source Sans Pro", "League Gothic", Impact, sans-serif;
+  font-weight:900; }
 /*.reveal h1 {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }*/
+
+/**
+ * LISTS
+ **/
+.reveal ul,
+.reveal ol {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75); }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #72C7E7;
+  color: rgb(255, 204, 0); /*#72C7E7;*/
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -92,8 +103,8 @@ body {
 
 .logos {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 15px;
+  left: 15px;
 }
 
 img.logo,
